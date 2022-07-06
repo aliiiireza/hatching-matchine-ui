@@ -11,13 +11,38 @@ import {
 } from "@/components/Cards";
 import { notify } from "@/common/notify";
 
-const Eggs = () => {
+const Eggs = ({ onHatch }: { onHatch: any }) => {
   const items = [
-    { id: 1, name: "Alireza", image: "" },
-    { id: 2, name: "Mohammad", image: "" },
-    { id: 3, name: "Yousef", image: "" },
-    { id: 4, name: "Hassan", image: "" },
-    { id: 5, name: "Nima", image: "" },
+    {
+      id: 1,
+      name: "Alireza",
+      image:
+        "https://storage.googleapis.com/fractal-launchpad-public-assets/honeyland/assets/Genesis_Bee_Egg.png",
+    },
+    {
+      id: 2,
+      name: "Mohammad",
+      image:
+        "https://storage.googleapis.com/fractal-launchpad-public-assets/honeyland/assets/Genesis_Bee_Egg.png",
+    },
+    {
+      id: 3,
+      name: "Yousef",
+      image:
+        "https://storage.googleapis.com/fractal-launchpad-public-assets/honeyland/assets/Genesis_Bee_Egg.png",
+    },
+    {
+      id: 4,
+      name: "Hassan",
+      image:
+        "https://storage.googleapis.com/fractal-launchpad-public-assets/honeyland/assets/Genesis_Bee_Egg.png",
+    },
+    {
+      id: 5,
+      name: "Nima",
+      image:
+        "https://storage.googleapis.com/fractal-launchpad-public-assets/honeyland/assets/Genesis_Bee_Egg.png",
+    },
   ];
 
   const [isHatching, setIsHatching] = useState(false);
@@ -32,8 +57,10 @@ const Eggs = () => {
       notify({ type: "error", message: "Please select an egg" });
 
     setIsHatching(true);
+    onHatch({ ...selectedEgg, isHatched: false });
     setTimeout(() => {
       notify({ type: "success", message: "The egg hatched successfully" });
+      onHatch({ ...selectedEgg, isHatched: true });
       setIsHatching(false);
     }, 2000);
   };
