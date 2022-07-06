@@ -1,13 +1,23 @@
 import { Row, Col } from "@/styled-components/components/layout";
-import { CardsInnerWrapper } from "./CardsInnerWrapper";
 import { Button } from "@/components/Button/Button";
 import { Card } from "@/components/Card/Card";
-import { Wrapper } from "./Wrapper";
-import { Header } from "./Header";
-import { Footer } from "./Footer";
-import { Title } from "./Title";
+import {
+  CardsInnerWrapper,
+  Wrapper,
+  Header,
+  Footer,
+  Title,
+} from "@/components/Cards";
 
-const Cards = ({ items }) => {
+const Eggs = () => {
+  const items = [
+    { name: "Alireza", image: "" },
+    { name: "Mohammad", image: "" },
+    { name: "Yousef", image: "" },
+    { name: "Hassan", image: "" },
+    { name: "Nima", image: "" },
+  ];
+
   return (
     <>
       <Wrapper>
@@ -30,4 +40,4 @@ const Cards = ({ items }) => {
     </>
   );
 };
-export default Cards;
+export default Eggs;

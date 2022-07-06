@@ -1,18 +1,22 @@
 import { Row, Col } from "@/styled-components/components/layout";
-import { CardsInnerWrapper } from "./CardsInnerWrapper";
 import { Button } from "@/components/Button/Button";
 import { Card } from "@/components/Card/Card";
-import { Wrapper } from "./Wrapper";
-import { Header } from "./Header";
-import { Footer } from "./Footer";
-import { Title } from "./Title";
+import {
+  CardsInnerWrapper,
+  Wrapper,
+  Header,
+  Footer,
+  Title,
+} from "@/components/Cards";
 
-const Cards = ({ items }) => {
+const Bees = () => {
+  const items = [{ name: "Alireza", image: "" }];
+
   return (
     <>
       <Wrapper>
         <Header>
-          <Title>SELECT AN EGG TO HATCH</Title>
+          <Title>HATCHED ITEMS</Title>
         </Header>
         <CardsInnerWrapper>
           <Row>
@@ -23,11 +27,8 @@ const Cards = ({ items }) => {
             ))}
           </Row>
         </CardsInnerWrapper>
-        <Footer>
-          <Button type="warning">HATCH</Button>
-        </Footer>
       </Wrapper>
     </>
   );
 };
-export default Cards;
+export default Bees;
