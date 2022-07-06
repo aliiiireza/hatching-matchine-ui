@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Wrapper = styled.div`
   padding: 2px;
@@ -9,4 +9,9 @@ export const Wrapper = styled.div`
   text-align: center;
   color: #d67f02;
   position: relative;
+  ${(props) =>
+    props.selected &&
+    css`
+      background: #00ffad;
+    `}
 `;

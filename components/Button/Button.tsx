@@ -4,6 +4,7 @@ interface ButtonProps {
   onClick?: () => any;
   type?: "primary" | "success" | "warning";
   children?: JSX.Element | string;
+  disabled?: boolean;
   loading?: boolean;
 }
 

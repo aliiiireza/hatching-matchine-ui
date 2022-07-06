@@ -5,23 +5,21 @@ import { TimeAgo } from "./TimeAgo";
 import { TimeIcon } from "./TimeIcon";
 import { Title } from "./Title";
 import { Wrapper } from "./Wrapper";
-
 interface cardProps {
-  name: string;
-  image: string;
+  item: any;
+  onCardClick?: any;
+  selected?: boolean;
 }
 
-export const Card = ({ name, image }: cardProps) => {
+export const Card = ({ item, selected, onCardClick }: cardProps) => {
   return (
-    <Wrapper>
-      <Image src={image} />
+    <Wrapper
+      onClick={() => onCardClick && onCardClick(item)}
+      selected={selected}
+    >
+      <Image src={item.image} />
       <DetailWrapper>
-        <Title>#{name}</Title>
-        <Divider />
-        <TimeAgo>
-          <TimeIcon />
-          21 days
-        </TimeAgo>
+        <Title>#{item.name}</Title>
       </DetailWrapper>
     </Wrapper>
   );

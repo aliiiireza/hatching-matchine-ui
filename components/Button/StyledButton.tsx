@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 
 export const StyledButton = styled.button`
+  cursor: pointer;
   font-weight: 100;
   text-transform: uppercase;
   display: inline-block;

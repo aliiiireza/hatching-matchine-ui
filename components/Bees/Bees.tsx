@@ -1,17 +1,9 @@
 import { Row, Col } from "@/styled-components/components/layout";
-import { Button } from "@/components/Button/Button";
 import { Card } from "@/components/Card/Card";
-import {
-  CardsInnerWrapper,
-  Wrapper,
-  Header,
-  Footer,
-  Title,
-} from "@/components/Cards";
+import { CardsInnerWrapper, Wrapper, Header, Title } from "@/components/Cards";
 
 const Bees = () => {
-  const items = [{ name: "Alireza", image: "" }];
-
+  const items = [{ id: 1, name: "Alireza", image: "" }];
   return (
     <>
       <Wrapper>
@@ -22,7 +14,7 @@ const Bees = () => {
           <Row>
             {items.map((item) => (
               <Col sm={6} md={4} span={3}>
-                <Card {...item} />
+                <Card item={item} />
               </Col>
             ))}
           </Row>
