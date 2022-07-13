@@ -4,7 +4,6 @@ body {
     font-family: "Lilita One", sans-serif !important;
   }
   background-repeat: no-repeat;
-  background-image: url("../public/background.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -77,4 +76,23 @@ code {
   border-radius: 100px;
   background-image: linear-gradient(180deg, #ff4b0e 0%, #ffab0e 99%);
   box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+}
+
+.lab-bg {
+  background-image: url("../public/background.jpg");
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 100vh;
+  height: initial !important;
+}
+.desert-bg {
+  background-image: url("../public/desert.jpg");
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 100vh;
+  height: initial !important;
 }
