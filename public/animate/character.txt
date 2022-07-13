@@ -1,0 +1,52 @@
+character 2048.png
+size:1632,274
+filter:Linear,Linear
+pma:true
+scale:0.5
+Body
+bounds:816,135,152,137
+offsets:0,0,261,137
+Egg down
+bounds:1181,47,192,89
+L antenna
+bounds:1420,46,90,68
+offsets:10,0,100,68
+rotate:90
+L arm
+bounds:652,8,131,116
+L leg 1
+bounds:1181,7,38,168
+rotate:90
+L leg 2
+bounds:1375,18,43,118
+L stick
+bounds:811,13,99,85
+R Antenna
+bounds:463,18,125,69
+R Arm
+bounds:1490,7,101,62
+R hand
+bounds:970,138,134,534
+offsets:5,0,139,534
+rotate:90
+R leg 1
+bounds:816,100,33,148
+rotate:90
+R leg 2
+bounds:912,4,38,94
+blink
+bounds:1490,71,114,42
+egg up
+bounds:463,89,187,183
+fire
+bounds:970,14,122,209
+rotate:90
+head
+bounds:652,126,162,146
+jet pack
+bounds:2,2,459,270
+light
+bounds:1506,115,124,157
+ring 2
+bounds:785,36,88,24
+rotate:90

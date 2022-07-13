@@ -1,0 +1,80 @@
+matchine.png
+size:1578,1037
+filter:Linear,Linear
+pma:true
+scale:0.5
+Ellipse 25
+bounds:845,2,198,229
+Layer 312
+bounds:2,413,726,622
+Layer 438
+bounds:2,27,384,503
+rotate:90
+Layer 439
+bounds:1197,255,94,217
+rotate:90
+Light back egg
+bounds:845,233,350,348
+big blue light 2
+bounds:1393,44,106,47
+offsets:1,1,108,49
+big blue liht 1
+bounds:1188,2,98,58
+offsets:1,1,100,60
+blue light 1
+bounds:1493,630,41,34
+offsets:2,1,44,36
+blue light 2
+bounds:1536,625,39,34
+offsets:1,1,41,36
+rotate:90
+blue light 3
+bounds:1501,59,39,33
+offsets:1,1,41,35
+blue light 4
+bounds:1493,595,41,33
+offsets:1,1,44,35
+egg 2
+bounds:1481,181,91,88
+rotate:90
+egg1
+bounds:730,445,136,103
+rotate:90
+egg1 light
+bounds:1419,274,147,145
+electricity
+bounds:1493,666,178,78
+rotate:90
+light in
+bounds:2,3,22,32
+rotate:90
+light in 1
+bounds:730,416,19,27
+mahfazeh copy
+bounds:1493,846,83,189
+mask 1
+bounds:1197,351,220,230
+mask up
+bounds:1419,421,143,160
+monitor
+bounds:1197,62,191,191
+oarange liquid
+bounds:1390,129,89,124
+rail
+bounds:507,33,336,378
+rail frames
+bounds:1390,93,83,34
+red light
+bounds:1393,7,103,35
+offsets:1,1,105,37
+shadow
+bounds:1481,94,85,90
+rotate:90
+stand
+bounds:1288,11,103,49
+stand and shadow
+bounds:730,583,761,452
+offsets:0,1,770,453
+stand mask
+bounds:1045,17,141,214
+offsets:0,1,141,215

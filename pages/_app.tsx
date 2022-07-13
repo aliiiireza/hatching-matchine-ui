@@ -1,4 +1,5 @@
 import "antd/dist/antd.dark.css";
+import "@esotericsoftware/spine-player/dist/spine-player.css";
 import "../styles/index.scss";
 import Theme from "@/styled-components/Theme";
 import type { AppProps } from "next/app";

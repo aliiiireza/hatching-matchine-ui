@@ -1,0 +1,15 @@
+1.png
+size:1000,565
+filter:Linear,Linear
+pma:true
+scale:0.5
+Layer 528
+bounds:2,2,561,584
+rotate:90
+Layer 529
+bounds:858,300,136,72
+Wing
+bounds:588,374,410,189
+hat
+bounds:588,41,268,331
+offsets:0,2,268,333

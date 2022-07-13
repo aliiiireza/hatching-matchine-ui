@@ -2191,6 +2191,25 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
+"@esotericsoftware/spine-core@^4.2.4":
+  version "4.2.4"
+  resolved "https://registry.yarnpkg.com/@esotericsoftware/spine-core/-/spine-core-4.2.4.tgz#a38744c9973f6668b86e7dc80e558b25d6611be3"
+  integrity sha512-tOgG+HFVuy0Ey91fj1jWEqNaKRVkSc3sZEMw8xfREN8eKsq7IRDxmG4e+o5ENGlEvQaGYh+JQBu3KqzMfWLFTw==
+
+"@esotericsoftware/spine-player@^4.2.4":
+  version "4.2.4"
+  resolved "https://registry.yarnpkg.com/@esotericsoftware/spine-player/-/spine-player-4.2.4.tgz#abff059beb1f13753cf4362c9826c5561ba6ce99"
+  integrity sha512-0zfZfTpdRuAtQImV+LmmEOrEPSDkNTVRxPvksto+BiRqn8VsKZhnbh72Cog7dGPwZ4oTyTFEUhKgpttMk4RhRQ==
+  dependencies:
+    "@esotericsoftware/spine-webgl" "^4.2.4"
+
+"@esotericsoftware/spine-webgl@^4.2.4":
+  version "4.2.4"
+  resolved "https://registry.yarnpkg.com/@esotericsoftware/spine-webgl/-/spine-webgl-4.2.4.tgz#d94fda7a3af5125ccd9a0749a6fd792c591ff632"
+  integrity sha512-S5LuepPbW4YIoNCMfLtPULBV5mUtgHH7Iiy8ciyLGxlfR5ZAXherzUWSkTT8PvzTEfSMXUk0/4pG73YR/CdLRg==
+  dependencies:
+    "@esotericsoftware/spine-core" "^4.2.4"
+
 "@ethersproject/abi@5.6.4", "@ethersproject/abi@^5.6.3":
   version "5.6.4"
   resolved "https://registry.yarnpkg.com/@ethersproject/abi/-/abi-5.6.4.tgz#f6e01b6ed391a505932698ecc0d9e7a99ee60362"
@@ -7673,7 +7692,7 @@ enhanced-resolve@^4.5.0:
     memory-fs "^0.5.0"
     tapable "^1.0.0"
 
-enhanced-resolve@^5.9.3:
+enhanced-resolve@^5.7.0, enhanced-resolve@^5.9.3:
   version "5.10.0"
   resolved "https://registry.yarnpkg.com/enhanced-resolve/-/enhanced-resolve-5.10.0.tgz#0dc579c3bb2a1032e357ac45b8f3a6f3ad4fb1e6"
   integrity sha512-T0yTFjdpldGY8PmuXXR0PyQ1ufZpEGiHVrp7zHKB7jdR4qlmZHhONVM5AQOAWXuF/w3dnHbEQVrNptJgt7F+cQ==
@@ -10968,6 +10987,14 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/nested-error-stacks/-/nested-error-stacks-2.1.1.tgz#26c8a3cee6cc05fbcf1e333cd2fc3e003326c0b5"
   integrity sha512-9iN1ka/9zmX1ZvLV9ewJYEk9h7RyRRtqdK0woXcqohu8EWIerfPUjYJPg0ULy0UqP7cslmdGc8xKDJcojlKiaw==
+
+next-transpile-modules@^9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/next-transpile-modules/-/next-transpile-modules-9.0.0.tgz#133b1742af082e61cc76b02a0f12ffd40ce2bf90"
+  integrity sha512-VCNFOazIAnXn1hvgYYSTYMnoWgKgwlYh4lm1pKbSfiB3kj5ZYLcKVhfh3jkPOg1cnd9DP+pte9yCUocdPEUBTQ==
+  dependencies:
+    enhanced-resolve "^5.7.0"
+    escalade "^3.1.1"
 
 next@12.1.6:
   version "12.1.6"
