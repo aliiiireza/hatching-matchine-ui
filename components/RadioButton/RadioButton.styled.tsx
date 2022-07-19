@@ -1,6 +1,10 @@
 import styled, { css } from "styled-components";
 
-export const OptionWrapper = styled.ul`
+interface RadioItemProps {
+  selected: string;
+}
+
+export const RadioList = styled.ul`
   padding: 0;
   margin: 20px;
   list-style-type: none;
@@ -9,11 +13,7 @@ export const OptionWrapper = styled.ul`
   }
 `;
 
-interface OptionProps {
-  selected: string;
-}
-
-export const Option = styled.li<OptionProps>`
+export const RadioItem = styled.li<RadioItemProps>`
   position: relative;
   color: #545454;
   cursor: pointer;
