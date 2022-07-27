@@ -1,8 +1,8 @@
 import type { NextPage } from "next";
 import { Row, Col } from "@/styled-components/components/layout";
 import Header from "@/components/Header";
-import Eggs from "@/components/Eggs/Eggs";
-import HatchedItem from "@/components/HatchedItem/HatchedItem";
+import EggsToHatch from "@/components/EggsToHatch/EggsToHatch";
+import Hatch from "@/components/Hatch/Hatch";
 import { useState } from "react";
 import {
   HatchingMachineAnimation,
@@ -24,12 +24,20 @@ const Home: NextPage = () => {
       <Header />
       <Row>
         <Col sm={12} span={6}>
-          <Eggs onHatch={(item) => setHatchedItem(item)} />
+          <Row>
+            <Col sm={12} span={5}>
+              <Hatch item={hatchedItem} />
+            </Col>
+            <Col sm={12} span={8}></Col>
+            <Col sm={12} span={12}>
+              <EggsToHatch onSelect={(item) => setHatchedItem(item)} />
+            </Col>
+          </Row>
         </Col>
         <Col sm={12} span={6}>
           <HatchingMachineAnimation state={hatchingState} />
 
-          <HatchedItem item={hatchedItem} />
+          {/* <HatchedItem item={hatchedItem} /> */}
         </Col>
       </Row>
     </div>

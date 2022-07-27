@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   padding: 15px;
-  height: calc(100vh - 250px);
+  /* height: calc(100vh - 250px); */
   border-radius: 40px;
   background-image: linear-gradient(
     154.62deg,

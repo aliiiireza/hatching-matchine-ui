@@ -4,6 +4,7 @@ import "../styles/index.scss";
 import Theme from "@/styled-components/Theme";
 import type { AppProps } from "next/app";
 import dynamic from "next/dynamic";
+import "swiper/css/bundle";
 import "@solana/wallet-adapter-react-ui/styles.css";
 import NextNProgress from "nextjs-progressbar";
 

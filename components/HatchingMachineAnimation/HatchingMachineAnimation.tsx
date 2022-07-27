@@ -15,15 +15,16 @@ export const HatchingMachineAnimation = ({
   var jsonUrl = "animate/matchine.json";
   var atlasUrl = "animate/matchine.atlas";
 
+  const [player, setPlayer] = useState(null);
   useEffect(() => {
     if (
       document.querySelectorAll("#player-container .spine-player").length === 0
-    )
-      new SpinePlayer("player-container", {
+    ) {
+      const tempPlayer: any = new SpinePlayer("player-container", {
         jsonUrl: jsonUrl,
         atlasUrl: atlasUrl,
         preserveDrawingBuffer: false,
-        showControls: true,
+        showControls: false,
         alpha: true,
         premultipliedAlpha: true,
         viewport: {
@@ -35,30 +36,40 @@ export const HatchingMachineAnimation = ({
           // padRight: "5%",
           // padTop: "5%",
           // padBottom: "5%",
-          debugRender: true,
+          debugRender: false,
         },
-        animation: "animation",
+        animation: "1",
         showLoading: false,
       });
+      setPlayer(tempPlayer);
+    }
   }, []);
 
+  const handleSwitchAnimation = () => {
+    if (player) player.setAnimation("animation", true);
+  };
   return (
     <div
       style={{
         width: "1000px",
-        height: "705px",
-        position: "relative",
+        height: "737px",
+        position: "fixed",
+        overflow: "hidden",
+        right: "-260px",
+        bottom: "0px",
       }}
     >
-      {/* <img
-        src="/hatching-machine.png"
+      <div onClick={handleSwitchAnimation}>Idle</div>
+      <img
+        src="/animate/under_matchine.png"
         style={{
           width: "1000px",
-          height: "705px",
+          height: "328",
           position: "absolute",
+          top: "407px",
           zIndex: 1,
         }}
-      /> */}
+      />
       <div
         id="player-container"
         style={{
@@ -66,7 +77,7 @@ export const HatchingMachineAnimation = ({
           width: "730px",
           position: "absolute",
           zIndex: 1,
-          top: "-596px",
+          top: "-396px",
           left: "83px",
         }}
       ></div>
