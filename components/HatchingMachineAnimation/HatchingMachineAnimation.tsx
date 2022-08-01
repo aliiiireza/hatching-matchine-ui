@@ -9,6 +9,20 @@ export enum HATCH_STATES {
   QUEEN_HATCH_END,
 }
 
+const animations = {
+  idle: "1",
+  bee: {
+    idle: "Normal egg idle",
+    in: "Normal egg in",
+    out: "Normal egg out",
+  },
+  queen: {
+    idle: "Queen egg idle",
+    in: "Queen egg in",
+    out: "Queen egg out",
+  },
+};
+
 export const HatchingMachineAnimation = ({
   state,
   setState,
@@ -50,21 +64,7 @@ export const HatchingMachineAnimation = ({
     }
   }, []);
 
-  const animations = {
-    idle: "1",
-    bee: {
-      idle: "Normal egg idle",
-      in: "Normal egg in",
-      out: "Normal egg out",
-    },
-    queen: {
-      idle: "Queen egg idle",
-      in: "Queen egg in",
-      out: "Queen egg out",
-    },
-  };
   useEffect(() => {
-    console.log(state);
     if (!player) return;
     switch (state) {
       // IDLE
