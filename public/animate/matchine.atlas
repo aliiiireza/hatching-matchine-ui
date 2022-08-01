@@ -1,91 +1,87 @@
 matchine.png
-size:2028,829
+size:1619,1037
 filter:Linear,Linear
 pma:true
 scale:0.5
 Ellipse 25
-bounds:1715,93,198,229
+bounds:845,2,198,229
 Layer 312
-bounds:2,205,726,622
+bounds:2,413,726,622
 Layer 438
-bounds:1493,324,384,503
-Layer 439
-bounds:1462,6,94,217
+bounds:2,27,384,503
 rotate:90
+Layer 439
+bounds:1493,818,94,217
 Light back egg
-bounds:730,25,350,348
+bounds:845,233,350,348
 big blue light 2
-bounds:1915,140,106,47
+bounds:1455,83,106,47
 offsets:1,1,108,49
+rotate:90
 big blue liht 1
-bounds:195,2,98,58
+bounds:1516,182,98,58
 offsets:1,1,100,60
+rotate:90
 blue light 1
-bounds:1984,328,41,34
+bounds:1455,47,41,34
 offsets:2,1,44,36
 blue light 2
-bounds:1992,63,39,34
+bounds:1455,11,39,34
 offsets:1,1,41,36
-rotate:90
 blue light 3
-bounds:1082,2,39,33
+bounds:1568,416,39,33
 offsets:1,1,41,35
 blue light 4
-bounds:1992,20,41,33
+bounds:1568,451,41,33
 offsets:1,1,44,35
-rotate:90
 egg 2
-bounds:1807,3,91,88
+bounds:1504,89,91,88
+rotate:90
 egg queen 2
-bounds:411,100,103,109
-rotate:90
+bounds:1350,47,103,109
 egg queen
-bounds:411,100,103,109
-rotate:90
+bounds:1350,47,103,109
 egg queen glow
-bounds:1879,675,147,152
+bounds:1419,429,147,152
 egg1
-bounds:1915,189,136,103
+bounds:730,445,136,103
 rotate:90
 egg1 light
-bounds:1879,526,147,145
-rotate:90
-electricity
-bounds:522,40,178,78
+bounds:1419,282,147,145
 light in
-bounds:1462,341,22,32
+bounds:2,3,22,32
+rotate:90
 light in 1
-bounds:1462,312,19,27
+bounds:1390,330,19,27
+rotate:90
 mahfazeh copy
-bounds:522,120,83,189
-rotate:90
+bounds:1493,627,83,189
 mask 1
-bounds:1483,102,220,230
-rotate:90
+bounds:1197,351,220,230
 mask up
-bounds:1879,364,143,160
+bounds:1188,13,143,160
+rotate:90
 monitor
-bounds:2,12,191,191
+bounds:1197,158,191,191
 oarange liquid
-bounds:1681,2,89,124
+bounds:1390,191,89,124
 rotate:90
 rail
-bounds:1082,37,336,378
-rotate:90
+bounds:507,33,336,378
 rail frames
-bounds:1915,104,83,34
+bounds:1493,591,83,34
 red light
-bounds:1879,327,103,35
+bounds:1350,10,103,35
 offsets:1,1,105,37
 shadow
-bounds:1900,6,85,90
+bounds:1504,2,85,90
 rotate:90
 stand
-bounds:411,49,103,49
+bounds:1568,486,103,49
+rotate:90
 stand and shadow
-bounds:730,375,761,452
+bounds:730,583,761,452
 offsets:0,1,770,453
 stand mask
-bounds:195,62,141,214
+bounds:1045,17,141,214
 offsets:0,1,141,215
-rotate:90

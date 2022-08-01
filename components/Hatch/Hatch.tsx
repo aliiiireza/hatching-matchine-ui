@@ -29,7 +29,7 @@ const Eggs = ({
       notify({ type: "success", message: "The egg hatched successfully" });
       onHatchEnd();
       setIsHatching(false);
-    }, 2000);
+    }, 10000);
   };
   return (
     <>

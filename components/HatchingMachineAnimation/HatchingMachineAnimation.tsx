@@ -3,14 +3,18 @@ import { SpinePlayer } from "@esotericsoftware/spine-player";
 
 export enum HATCH_STATES {
   IDLE,
-  HATCHED,
-  HATCHING,
+  BEE_HATCH_START,
+  BEE_HATCH_END,
+  QUEEN_HATCH_START,
+  QUEEN_HATCH_END,
 }
 
 export const HatchingMachineAnimation = ({
   state,
+  setState,
 }: {
   state: HATCH_STATES;
+  setState: any;
 }) => {
   var jsonUrl = "animate/matchine.json";
   var atlasUrl = "animate/matchine.atlas";
@@ -27,6 +31,7 @@ export const HatchingMachineAnimation = ({
         showControls: false,
         alpha: true,
         premultipliedAlpha: true,
+
         viewport: {
           // x: -300,
           // y: -500,
@@ -45,9 +50,57 @@ export const HatchingMachineAnimation = ({
     }
   }, []);
 
-  const handleSwitchAnimation = () => {
-    if (player) player.setAnimation("animation", true);
+  const animations = {
+    idle: "1",
+    bee: {
+      idle: "Normal egg idle",
+      in: "Normal egg in",
+      out: "Normal egg out",
+    },
+    queen: {
+      idle: "Queen egg idle",
+      in: "Queen egg in",
+      out: "Queen egg out",
+    },
   };
+  useEffect(() => {
+    console.log(state);
+    if (!player) return;
+    switch (state) {
+      // IDLE
+      case HATCH_STATES.IDLE:
+        player.setAnimation(animations.idle, true);
+        break;
+
+      // BEE HATCH START
+      case HATCH_STATES.BEE_HATCH_START:
+        player.setAnimation(animations.bee.in, false);
+        setTimeout(() => player.setAnimation(animations.bee.idle, true), 3000);
+        break;
+
+      // BEE HATCH END
+      case HATCH_STATES.BEE_HATCH_END:
+        player.setAnimation(animations.bee.out, false);
+        setTimeout(() => setState(HATCH_STATES.IDLE), 2000);
+        break;
+
+      // QUEEN HATCH START
+      case HATCH_STATES.QUEEN_HATCH_END:
+        player.setAnimation(animations.queen.in, false);
+        setTimeout(
+          () => player.setAnimation(animations.queen.idle, true),
+          3000
+        );
+        break;
+
+      // QUEEN HATCH END
+      case HATCH_STATES.QUEEN_HATCH_END:
+        player.setAnimation(animations.queen.out, false);
+        setTimeout(() => setState(HATCH_STATES.IDLE), 2000);
+        break;
+    }
+  }, [state]);
+
   return (
     <div
       style={{
@@ -59,7 +112,6 @@ export const HatchingMachineAnimation = ({
         bottom: "0px",
       }}
     >
-      <div onClick={handleSwitchAnimation}>Idle</div>
       <img
         src="/animate/under_matchine.png"
         style={{

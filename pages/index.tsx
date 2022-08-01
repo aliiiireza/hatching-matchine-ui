@@ -12,12 +12,9 @@ import {
 const Home: NextPage = () => {
   const [hatchedItem, setHatchedItem] = useState(null);
 
-  let hatchingState = HATCH_STATES.IDLE;
-
-  if (hatchedItem)
-    hatchingState = hatchedItem.isHatched
-      ? HATCH_STATES.HATCHING
-      : HATCH_STATES.HATCHED;
+  const [hatchingMachineState, setHatchingMachineState] = useState(
+    HATCH_STATES.IDLE
+  );
 
   return (
     <div className="app">
@@ -26,7 +23,15 @@ const Home: NextPage = () => {
         <Col sm={12} span={6}>
           <Row>
             <Col sm={12} span={5}>
-              <Hatch item={hatchedItem} />
+              <Hatch
+                item={hatchedItem}
+                onHatchStart={() =>
+                  setHatchingMachineState(HATCH_STATES.BEE_HATCH_START)
+                }
+                onHatchEnd={() =>
+                  setHatchingMachineState(HATCH_STATES.BEE_HATCH_END)
+                }
+              />
             </Col>
             <Col sm={12} span={8}></Col>
             <Col sm={12} span={12}>
@@ -35,7 +40,10 @@ const Home: NextPage = () => {
           </Row>
         </Col>
         <Col sm={12} span={6}>
-          <HatchingMachineAnimation state={hatchingState} />
+          <HatchingMachineAnimation
+            state={hatchingMachineState}
+            setState={setHatchingMachineState}
+          />
 
           {/* <HatchedItem item={hatchedItem} /> */}
         </Col>
