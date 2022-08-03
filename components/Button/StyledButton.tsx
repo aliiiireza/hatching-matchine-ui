@@ -80,4 +80,19 @@ const types = {
       ),
       #ff4b0e;
   `,
+  disabled: css`
+    cursor: not-allowed;
+    background: radial-gradient(
+        106.52% 100% at 86.81% 100%,
+        rgba(0, 0, 0, 0.1) 0%,
+        rgba(0, 0, 0, 0) 86.18%
+      ),
+      radial-gradient(
+        55.45% 54.3% at 25.93% 25.27%,
+        rgba(255, 255, 255, 0.679) 0%,
+        rgba(255, 255, 255, 0) 69.79%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      #999999;
+  `,
 };

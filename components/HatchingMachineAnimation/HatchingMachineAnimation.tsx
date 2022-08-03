@@ -47,10 +47,10 @@ export const HatchingMachineAnimation = ({
         premultipliedAlpha: true,
 
         viewport: {
-          // x: -300,
-          // y: -500,
-          // width: 300,
-          // height: 500,
+          x: -1100,
+          y: -1100,
+          width: 2200,
+          height: 2200,
           // padLeft: "5%",
           // padRight: "5%",
           // padTop: "5%",
@@ -125,12 +125,12 @@ export const HatchingMachineAnimation = ({
       <div
         id="player-container"
         style={{
-          height: "1512px",
-          width: "730px",
+          height: "1500px",
+          width: "930px",
           position: "absolute",
           zIndex: 1,
-          top: "-396px",
-          left: "83px",
+          top: "-401px",
+          left: "23px",
         }}
       ></div>
     </div>

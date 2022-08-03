@@ -1,16 +1,16 @@
 import { useState } from "react";
-import { Row, Col } from "@/styled-components/components/layout";
-import { Button } from "@/components/Button/Button";
 import { Card } from "@/components/Card/Card";
 import {
   CardsInnerWrapper,
+  SwiperWrapper,
+  SwiperArrowLeft,
+  SwiperArrowRight,
   Wrapper,
   Header,
-  Footer,
   Title,
 } from "@/components/Cards";
-import { notify } from "@/common/notify";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import next from "next";
 
 const Eggs = ({ onSelect }: { onSelect: any }) => {
   const items = [
@@ -63,7 +63,8 @@ const Eggs = ({ onSelect }: { onSelect: any }) => {
           <Title>YOUR EGGS LIST</Title>
         </Header>
         <CardsInnerWrapper>
-          <Row>
+          <SwiperWrapper>
+            <SwiperArrowLeft src="/arrow_left.png" />
             <Swiper
               slidesPerView={"auto"}
               centeredSlides={false}
@@ -80,7 +81,8 @@ const Eggs = ({ onSelect }: { onSelect: any }) => {
                 </SwiperSlide>
               ))}
             </Swiper>
-          </Row>
+            <SwiperArrowRight src="/arrow_right.png" />
+          </SwiperWrapper>
         </CardsInnerWrapper>
       </Wrapper>
     </>

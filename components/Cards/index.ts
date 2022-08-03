@@ -1,7 +1,6 @@
-import { CardsInnerWrapper } from "./CardsInnerWrapper";
-import { Wrapper } from "./Wrapper";
-import { Header } from "./Header";
-import { Footer } from "./Footer";
-import { Title } from "./Title";
-
-export { CardsInnerWrapper, Wrapper, Header, Footer, Title };
+export * from "./CardsInnerWrapper";
+export * from "./SwiperWrapper";
+export * from "./Wrapper";
+export * from "./Header";
+export * from "./Footer";
+export * from "./Title";

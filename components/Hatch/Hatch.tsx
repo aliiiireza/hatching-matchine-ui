@@ -43,14 +43,21 @@ const Eggs = ({
         </Header>
         <CardsInnerWrapper>
           <Row>
-            <Col span={12}>{item && <Card item={item} />}</Col>
+            <Col span={12}>
+              {item && <Card item={item} />}
+              {!item && (
+                <Card
+                  item={{ image: "/placeholder.jpg", name: "SELECT AN EGG" }}
+                />
+              )}
+            </Col>
           </Row>
         </CardsInnerWrapper>
         <Footer>
           <Button
-            type="warning"
-            onClick={onHatchClick}
-            disabled={isHatching}
+            type={!item || isHatching ? "disabled" : "warning"}
+            onClick={item && !isHatching && onHatchClick}
+            disabled={!item || isHatching}
             loading={isHatching}
           >
             HATCH

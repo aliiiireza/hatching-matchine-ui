@@ -2,7 +2,7 @@ import { StyledButton } from "./StyledButton";
 
 interface ButtonProps {
   onClick?: () => any;
-  type?: "primary" | "success" | "warning";
+  type?: "primary" | "success" | "warning" | "disabled";
   children?: JSX.Element | string;
   disabled?: boolean;
   loading?: boolean;
